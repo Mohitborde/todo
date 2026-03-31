@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EliteStore - Premium Shopping Experience</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+
+    <nav class="navbar">
+        <div class="container">
+            <div class="delivery-location">
+                <span class="location-icon">📍</span>
+                <span class="location-text">Deliver to <strong>Your Location</strong></span>
+                <button class="change-location-btn" onclick="alert('Change location feature coming soon!')">Change</button>
+            </div>
+            <a href="index.html" class="logo">EliteStore</a>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="products.html">Products</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+            <div class="search-bar">
+                <input type="text" placeholder="Search products...">
+                <button aria-label="Search">
+                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <circle cx="10" cy="10" r="7" stroke="currentColor" stroke-width="2"/>
+                        <line x1="16.2" y1="16.2" x2="20" y2="20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+                    </svg>
+                </button>
+            </div>
+            <button class="cart-icon" onclick="window.location.href='cart.html'">
+                🛒 <span class="cart-count">0</span>
+            </button>
+            <button class="login-btn" onclick="window.location.href='login.html'">Login</button>
+            <button class="mobile-menu-toggle">☰</button>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Welcome to EliteStore</h1>
+            <p>Discover premium products with exceptional quality and style. Shop the latest trends and elevate your lifestyle.</p>
+            <button class="cta-btn" onclick="window.location.href='products.html'">Shop Now</button>
+        </div>
+    </section>
+
+    <section class="categories">
+        <div class="container">
+            <h2>Shop by Category</h2>
+            <div class="category-grid">
+                <div class="category-card" onclick="window.location.href='products.html?category=electronics'">
+                    <img src="https://picsum.photos/300/200?random=10" alt="Electronics">
+                    <h3>Electronics</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='products.html?category=fashion'">
+                    <img src="https://picsum.photos/300/200?random=11" alt="Fashion">
+                    <h3>Fashion</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='products.html?category=shoes'">
+                    <img src="https://picsum.photos/300/200?random=12" alt="Shoes">
+                    <h3>Shoes</h3>
+                </div>
+                <div class="category-card" onclick="window.location.href='products.html?category=accessories'">
+                    <img src="https://picsum.photos/300/200?random=13" alt="Accessories">
+                    <h3>Accessories</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="products">
+        <div class="container">
+            <h2>Featured Products</h2>
+            <div class="filters">
+                <button class="filter-btn active" data-category="all">All</button>
+                <button class="filter-btn" data-category="electronics">Electronics</button>
+                <button class="filter-btn" data-category="fashion">Fashion</button>
+                <button class="filter-btn" data-category="shoes">Shoes</button>
+                <button class="filter-btn" data-category="accessories">Accessories</button>
+            </div>
+            <div class="product-grid">
+                <!-- Products will be dynamically loaded here -->
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h3>EliteStore</h3>
+                <p>Your premium shopping destination for quality products and exceptional service.</p>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="products.html">Products</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Customer Service</h3>
+                <ul>
+                    <li><a href="#">Shipping Info</a></li>
+                    <li><a href="#">Returns</a></li>
+                    <li><a href="#">Size Guide</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="#" class="social-icon">📘</a>
+                    <a href="#" class="social-icon">🐦</a>
+                    <a href="#" class="social-icon">📷</a>
+                    <a href="#" class="social-icon">💼</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EliteStore. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
